@@ -41,3 +41,7 @@ button {
 .calculator__display {
   text-align: right;
 }
+
+.calculator__header {
+  text-align: center;
+}
