@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer type="text/javascript" src="./javascript.js"></script>
   </head>
   <body>
     <header class="calculator__header">
@@ -12,25 +13,110 @@
     </header>
     <section class="calculator__container">
       <div class="calculator__inner-container">
-        <p class="calculator__display">1</p>
+        <p class="calculator__display" id="display">0</p>
         <div class="calculator__buttons">
-          <button class="calculator__number-key">1</button>
-          <button class="calculator__number-key">2</button>
-          <button class="calculator__number-key">3</button>
-          <button class="calculator__action-key">/</button>
-          <button class="calculator__number-key">4</button>
-          <button class="calculator__number-key">5</button>
-          <button class="calculator__number-key">6</button>
-          <button class="calculator__action-key">*</button>
-          <button class="calculator__number-key">7</button>
-          <button class="calculator__number-key">8</button>
-          <button class="calculator__number-key">9</button>
-          <button class="calculator__action-key">-</button>
-          <button class="calculator__number-key">0</button>
-          <button class="calculator__number-key">.</button>
-          <button class="calculator__clear-key">C</button>
-          <button class="calculator__action-key">+</button>
-          <button class="calculator__result-key">=</button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('1')"
+          >
+            1
+          </button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('2')"
+          >
+            2
+          </button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('3')"
+          >
+            3
+          </button>
+          <button
+            class="calculator__action-key"
+            onclick="handleClickButton('/')"
+          >
+            /
+          </button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('4')"
+          >
+            4
+          </button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('5')"
+          >
+            5
+          </button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('6')"
+          >
+            6
+          </button>
+          <button
+            class="calculator__action-key"
+            onclick="handleClickButton('*')"
+          >
+            *
+          </button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('7')"
+          >
+            7
+          </button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('8')"
+          >
+            8
+          </button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('9')"
+          >
+            9
+          </button>
+          <button
+            class="calculator__action-key"
+            onclick="handleClickButton('-')"
+          >
+            -
+          </button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('0')"
+          >
+            0
+          </button>
+          <button
+            class="calculator__number-key"
+            onclick="handleClickButton('.')"
+          >
+            .
+          </button>
+          <button
+            class="calculator__clear-key"
+            onclick="handleClickClearButton()"
+          >
+            C
+          </button>
+          <button
+            class="calculator__action-key"
+            onclick="handleClickButton('+')"
+          >
+            +
+          </button>
+          <button
+            class="calculator__result-key"
+            onclick="handleClickEqualButton()"
+          >
+            =
+          </button>
         </div>
       </div>
     </section>
